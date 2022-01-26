@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Nav = () => {
-  return <div>
+  return (
+    <div>
       <h1>Joel Giroux</h1>
       <h3>Home</h3>
       <h3>Projects</h3>
       <h3>Contact</h3>
-  </div>;
+    </div>
+  );
 };
 
-export default Nav
+export default Nav;
