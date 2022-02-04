@@ -1,13 +1,14 @@
+import "./Nav.css"
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div>
+    <div id="navbar">
       <Link to="/">
-        <h1>Joel Giroux</h1>
+        <h1 id="logo">Joel Giroux</h1>
       </Link>
-      <div id="nav-links">
+      <div id="nav-links-cont">
         <Link to="/">
           <h3>Home</h3>
         </Link>
