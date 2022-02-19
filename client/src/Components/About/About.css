@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 30vh;
+  margin-top: 35vh;
   margin-bottom: 15vh;
 }
 
@@ -11,11 +11,12 @@
   z-index: 1;
   width: 15%;
   margin-bottom: -0.5em;
-  border-top: solid #36454f;
-  border-right: solid #36454f;
-  border-left: solid #36454f;
+  border-top: double #36454f;
+  border-right: double #36454f;
+  border-left: double #36454f;
   border-radius: 30%;
   background: #a57c00;
+  font-family: BoldMcFont;
 }
 
 #about-cont {
@@ -24,29 +25,35 @@
   align-items: center;
   width: 90%;
   height: 25em;
-  border-top: solid #36454f;
-  border-bottom: solid #36454f;
+  border-top: double #36454f;
+  border-bottom: double #36454f;
+  border-left: transparent;
+  border-right: transparent;
   border-radius: 15%;
   background-image: linear-gradient(to right, #804a00, #a57c00, #804a00);
 }
 
-#about-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-right: 3em;
+#about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-right: 3em;
 }
 
 #round-img {
-    height: 70%;
-    width: 25%;
-    margin-left: 3em;
-    border: solid #36454f;
-    border-radius: 50%;
-
+  height: 70%;
+  width: 25%;
+  margin-left: 3em;
+  border: solid #36454f;
+  border-radius: 50%;
 }
 
-#about-text{
-    width: 70%;
+#about-job-title {
+  font-family: BoldMCFont;
+}
+
+#about-text {
+  width: 70%;
+  color: #36454f;
 }

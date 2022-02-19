@@ -1,10 +1,21 @@
-import "./Nav.css"
-import React from "react";
+import "./Nav.css";
+import React, { useState } from "react";
+import { Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [boxShadower, setBoxShadower] = useState(0);
+
+  window.onscroll = () => {
+    if (window.pageYOffset > 20) {
+      setBoxShadower(3);
+    } else {
+      setBoxShadower(0);
+    }
+  };
+
   return (
-    <div id="navbar">
+    <Toolbar sx={{ boxShadow: boxShadower }} variant="dense" id="navbar">
       <Link to="/">
         <h1 id="logo">Joel Giroux</h1>
       </Link>
@@ -18,7 +29,7 @@ const Nav = () => {
         </Link>
         <h3>Contact</h3>
       </div>
-    </div>
+    </Toolbar>
   );
 };
 
