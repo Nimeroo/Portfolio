@@ -1,0 +1,155 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+}
+
+#skills-title {
+  z-index: 1;
+  width: 15%;
+  margin-bottom: -0.5em;
+  border-top: double #36454f;
+  border-right: double #36454f;
+  border-left: double #36454f;
+  border-radius: 30%;
+  background: #a57c00;
+  font-family: BoldMCFont;
+}
+
+#skills-cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 25em;
+  border-top: double #36454f;
+  border-bottom: double #36454f;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 15%;
+  background-image: linear-gradient(to right, #804a00, #a57c00, #804a00);
+}
+
+#recent-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+#other-skills-cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 13em;
+  border-top: double #36454f;
+  border-bottom: double #36454f;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 15%;
+  background-image: linear-gradient(to right, #804a00, #a57c00, #804a00);
+  animation: grow-fade-in forwards 0.5s;
+}
+
+#other-skills-cont > * {
+  animation: fade-in forwards 0.5s;
+}
+
+#other-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.specific-skills-title {
+  width: 15%;
+  margin-bottom: -0.5em;
+  border-bottom: double #36454f;
+  font-family: BoldMcFont;
+  color: #36454f;
+}
+
+.skill-item {
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  width: 10%;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+}
+
+.expand-btn {
+  position: absolute;
+  bottom: 0;
+  background: none;
+  border: none;
+  font-family: MCFont;
+}
+
+.expand-btn:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: #36454f;
+}
+
+@keyframes grow-fade-in {
+  from {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    height: 1;
+    width: 1;
+  }
+}
+
+@keyframes shrink-fade-out {
+  from {
+    opacity: 1;
+    height: 1;
+    width: 1;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
