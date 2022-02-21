@@ -1,18 +1,42 @@
+import "./Contact.css";
 import React from "react";
+import { Box, Paper } from "@mui/material";
+import linkedinLogo from "../../Assets/linkedin-logo.png";
+import githubLogo from "../../Assets/github-logo.png";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Me</h1>
-      <h4>Shoot me an email at: <span>girou.joe@gmail.com</span></h4>
-      <button
-        onClick={() => {
-          window.open("mailto:giro.joe@gmail.com");
-        }}
-      >
-        Send a message
-      </button>
-    </div>
+    <Box id="contact">
+      <h1 id="contact-title">Contact Me</h1>
+      <Paper id="contact-cont">
+        <h2 id="search-status">Always searching for new opportunities.</h2>
+        <h4>
+          Shoot me an email at:
+          <div
+            id="email"
+            onClick={() => {
+              window.open("mailto:giro.joe@gmail.com");
+            }}
+          >
+            girou.joe@gmail.com
+          </div>
+        </h4>
+        <div id="social-links-cont">
+          <a
+            className="social-link"
+            href="https://www.linkedin.com/in/joelgiroux/"
+          >
+            <img src={linkedinLogo} alt="LinkedIn" />
+          </a>
+          <a
+            className="social-link"
+            href="https://github.com/Nimeroo"
+          >
+            <img src={githubLogo} alt="Github" />
+          </a>
+        </div>
+      </Paper>
+    </Box>
   );
 };
 
