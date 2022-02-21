@@ -74,8 +74,8 @@
   width: 15%;
   margin-bottom: -0.5em;
   border-bottom: double #36454f;
-  font-family: BoldMcFont;
   color: #36454f;
+  font-family: McFont;
 }
 
 .skill-item {
