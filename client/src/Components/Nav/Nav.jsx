@@ -21,14 +21,14 @@ const Nav = () => {
       </Link>
       <div id="nav-links-cont">
         <Link to="/">
-          <h3>Home</h3>
+          <h3 className="nav-link">Home</h3>
         </Link>
-        <h3>About</h3>
-        <h3>Skills</h3>
+        <h3 className="nav-link">About</h3>
+        <h3 className="nav-link">Skills</h3>
         <Link to="/projects">
-          <h3>Projects</h3>
+          <h3 className="nav-link">Projects</h3>
         </Link>
-        <h3>Contact</h3>
+        <h3 className="nav-link">Contact</h3>
       </div>
     </Toolbar>
   );
