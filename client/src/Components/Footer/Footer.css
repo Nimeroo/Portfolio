@@ -1,0 +1,10 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  border-top: double #36454f;;
+  width: 100%;
+  height: 1em;
+  background-color: #a57c00;
+  font-family: BoldMcFont;
+}

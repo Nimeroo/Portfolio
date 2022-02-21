@@ -1,9 +1,10 @@
 import React from "react";
+import "./Footer.css"
 
 const Footer = () => {
   return (
-    <div>
-      <h4>Built by Joel Giroux</h4>
+    <div id="footer">
+      Built by Joel Giroux
     </div>
   );
 };
