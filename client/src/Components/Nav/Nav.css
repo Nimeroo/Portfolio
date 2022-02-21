@@ -1,40 +1,40 @@
-#navbar{
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 3em;
-    background-color: #A57C00;
-    text-align: center;
+#navbar {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 3em;
+  background-color: #a57c00;
+  text-align: center;
 }
 
 #navbar > * {
-    margin-right: 3em;
-    margin-left: 3em;
-    height: inherit;
+  margin-right: 3em;
+  margin-left: 3em;
+  height: inherit;
 }
 
-#logo{
-    font-size: 1.3em;
-    font-family: BoldMcFont;
-    color: black;
+#logo {
+  font-size: 1.3em;
+  font-family: BoldMcFont;
+  color: black;
 }
 
 #nav-links-cont {
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
 }
 
-#nav-links-cont> *{
-    font-family: McFont;
-    font-size: 1em;
+#nav-links-cont > * {
+  font-family: McFont;
+  font-size: 1em;
 }
 
-#nav-links-cont > * > *{
-    font-size: 1em;
-    font-family: McFont;
-    color: black
+#nav-links-cont > * > * {
+  font-size: 1em;
+  font-family: McFont;
+  color: black;
 }

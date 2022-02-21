@@ -24,6 +24,7 @@ const Nav = () => {
           <h3>Home</h3>
         </Link>
         <h3>About</h3>
+        <h3>Skills</h3>
         <Link to="/projects">
           <h3>Projects</h3>
         </Link>
