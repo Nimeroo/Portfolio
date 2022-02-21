@@ -17,6 +17,7 @@ const About = () => {
             allows me to become accustomed to new situations and environments
             extremely fast.
           </Typography>
+          <a id="resume-link" href="https://docs.google.com/document/d/1jguaPrvfm5L7l-nkVlsO00poP8kNEvIt8bwBL2WrhXo/" target="_blank">Click here for resume.</a>
         </div>
       </Paper>
     </Box>

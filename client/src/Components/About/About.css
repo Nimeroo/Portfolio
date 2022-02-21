@@ -56,4 +56,19 @@
 #about-text {
   width: 70%;
   color: #36454f;
+  font-family: McFont;
+}
+
+#resume-link{
+  margin: 1em;
+  text-decoration: #804a00 dotted underline;
+  cursor: pointer;
+  font-family: MCFont;
+  color: black;
+}
+
+#resume-link:hover{
+  transition: 0.3s;
+  color: #36454f;
+  animation: bounce forwards 1s;
 }
