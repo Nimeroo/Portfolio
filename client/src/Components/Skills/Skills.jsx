@@ -9,7 +9,7 @@ import nodeLogo from "../../Assets/node-logo.png";
 import pythonLogo from "../../Assets/python-logo.png";
 import { Box, Paper } from "@mui/material";
 
-const Skills = () => {
+const Skills = ({ skillsReference, scrollTo }) => {
   const [expandedSkills, setExpandedSkills] = useState(false);
 
   const extraSkillsBtn = () => {
@@ -54,7 +54,13 @@ const Skills = () => {
               <h5 className="skill-name">Python</h5>
             </div>
           </div>
-          <button className="expand-btn" onClick={() => otherSkillsFadeOut()}>
+          <button
+            className="expand-btn"
+            onClick={() => {
+              otherSkillsFadeOut();
+              scrollTo(skillsReference);
+            }}
+          >
             Collapse
           </button>
         </Paper>
@@ -64,7 +70,7 @@ const Skills = () => {
     }
   };
   return (
-    <Box id="skills">
+    <Box id="skills" ref={skillsReference}>
       <h1 id="skills-title">Skills</h1>
       <Paper elevation={10} id="skills-cont">
         <h5 className="specific-skills-title">Recently used technologies</h5>

@@ -4,9 +4,9 @@ import { Box, Paper } from "@mui/material";
 import linkedinLogo from "../../Assets/linkedin-logo.png";
 import githubLogo from "../../Assets/github-logo.png";
 
-const Contact = () => {
+const Contact = ({ contactReference }) => {
   return (
-    <Box id="contact">
+    <Box id="contact" ref={contactReference}>
       <h1 id="contact-title">Contact Me</h1>
       <Paper id="contact-cont">
         <h2 id="search-status">Always searching for new opportunities.</h2>
@@ -28,10 +28,7 @@ const Contact = () => {
           >
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>
-          <a
-            className="social-link"
-            href="https://github.com/Nimeroo"
-          >
+          <a className="social-link" href="https://github.com/Nimeroo">
             <img src={githubLogo} alt="Github" />
           </a>
         </div>
