@@ -4,13 +4,13 @@ import Hero from "../../Components/Hero/Hero";
 import Skills from "../../Components/Skills/Skills";
 import Contact from "../../Components/Contact/Contact";
 
-const Home = () => {
+const Home = ({scrollTo, homeReference, aboutReference, skillsReference, contactReference}) => {
   return (
     <div>
-      <Hero />
-      <About />
-      <Skills />
-      <Contact />
+      <Hero homeReference={homeReference}/>
+      <About aboutReference={aboutReference}/>
+      <Skills scrollTo={scrollTo} skillsReference={skillsReference}/>
+      <Contact contactReference={contactReference}/>
     </div>
   );
 };
