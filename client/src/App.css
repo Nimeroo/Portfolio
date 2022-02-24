@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 
 @font-face {
   font-family: McFont;
@@ -10,21 +10,54 @@
   src: url(./Assets/MC-font/MinecraftBoldItalic-1y1e.otf);
 }
 
-*{
+* {
   font-family: Karla, sans-serif;
 }
 
-html{
-  background-color: #804A00;
+html {
+  height: 100%;
+  background-color: #804a00;
 }
 
-a{
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+}
+
+a {
   text-decoration: none;
 }
 
 .App {
-  position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   text-align: center;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
