@@ -1,0 +1,89 @@
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: auto;
+  justify-content: center;
+  height: 100%;
+  padding-top: 10em;
+}
+
+#project-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: fade-in forwards 0.5s;
+  margin: 3em;
+  height: 30em;
+  border-top: double #36454f;
+  border-bottom: double #36454f;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 15%;
+  background-image: linear-gradient(to right, #804a00, #a57c00, #804a00);
+}
+
+#project-title {
+  z-index: 1;
+  margin-top: -1em;
+  margin-bottom: 0;
+  width: 40%;
+  height: 2em;
+  padding: 1em;
+  border-top: double #36454f;
+  border-right: double #36454f;
+  border-left: double #36454f;
+  border-radius: 30%;
+  background: #a57c00;
+  font-family: BoldMCFont;
+  text-align: center;
+}
+
+#github-link {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 10%;
+}
+
+#github-link > * {
+  margin-right: 2em;
+  width: 10%;
+  height: 100%;
+}
+
+#github-link > *:hover {
+    transition: 0.5s;
+  filter: invert(26%) sepia(9%) saturate(1062%) hue-rotate(161deg) brightness(92%) contrast(94%);
+}
+
+#project-thumbnail {
+  margin-top: 1em;
+  width: 80%;
+  height: 50%;
+}
+
+#project-description {
+  width: 90%;
+  font-family: MCFont;
+}
+
+#project-link {
+  text-decoration: #804a00 dotted underline;
+  cursor: pointer;
+  font-family: MCFont;
+  color: black;
+}
+
+#project-link:hover {
+  transition: 0.3s;
+  animation: bounce forwards 1s;
+  color: #36454f;
+}
+
+#project-technologies {
+  display: flex;
+  margin-top: 1em;
+  font-family: MCFont;
+  color: #36454f;
+}

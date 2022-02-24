@@ -3,7 +3,13 @@ import React, { useState } from "react";
 import { Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({
+  scrollTo,
+  homeReference,
+  aboutReference,
+  skillsReference,
+  contactReference,
+}) => {
   const [boxShadower, setBoxShadower] = useState(0);
 
   window.onscroll = () => {
@@ -20,15 +26,21 @@ const Nav = () => {
         <h1 id="logo">Joel Giroux</h1>
       </Link>
       <div id="nav-links-cont">
-        <Link to="/">
+        <Link to="/" onClick={() => scrollTo(homeReference)}>
           <h3 className="nav-link">Home</h3>
         </Link>
-        <h3 className="nav-link">About</h3>
-        <h3 className="nav-link">Skills</h3>
+        <Link to="/" onClick={() => scrollTo(aboutReference)}>
+          <h3 className="nav-link">About</h3>
+        </Link>
+        <Link to="/" onClick={() => scrollTo(skillsReference)}>
+          <h3 className="nav-link">Skills</h3>
+        </Link>
         <Link to="/projects">
           <h3 className="nav-link">Projects</h3>
         </Link>
-        <h3 className="nav-link">Contact</h3>
+        <Link to="/" onClick={() => scrollTo(contactReference)}>
+          <h3 className="nav-link">Contact</h3>
+        </Link>
       </div>
     </Toolbar>
   );
