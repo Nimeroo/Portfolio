@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getProjects } from "../../Services/apiConfig";
 import ProjectList from "../../Components/ProjectList/ProjectList";
+import ProjectHero from "../../Components/ProjectHero/ProjectHero";
 
 const Projects = () => {
   const [projects, setProjects] = useState({});
@@ -16,7 +17,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="project-list-cont">
+    <div>
+      <ProjectHero />
       <ProjectList projects={projects} />
     </div>
   );
