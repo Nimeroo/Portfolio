@@ -7,25 +7,42 @@ import Projects from "./Screens/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-
   const aboutReference = createRef();
   const contactReference = createRef();
   const skillsReference = createRef();
-  const homeReference = createRef()
+  const homeReference = createRef();
 
   const scrollTo = (ref) => {
     window.scrollTo({
       left: 0,
       top: ref.current.offsetTop - 40,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
-  }
+  };
 
   return (
     <div className="App">
-      <Nav scrollTo={scrollTo} homeReference={homeReference} aboutReference={aboutReference} contactReference={contactReference} skillsReference={skillsReference}/>
+      <Nav
+        scrollTo={scrollTo}
+        homeReference={homeReference}
+        aboutReference={aboutReference}
+        contactReference={contactReference}
+        skillsReference={skillsReference}
+      />
       <Routes>
-        <Route exact path="/" element={<Home scrollTo={scrollTo} homeReference={homeReference} aboutReference={aboutReference} contactReference={contactReference} skillsReference={skillsReference}/>} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Home
+              scrollTo={scrollTo}
+              homeReference={homeReference}
+              aboutReference={aboutReference}
+              contactReference={contactReference}
+              skillsReference={skillsReference}
+            />
+          }
+        />
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
