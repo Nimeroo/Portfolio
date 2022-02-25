@@ -7,12 +7,12 @@
   background-image: linear-gradient(to bottom, #a57c00, #804a00);
 }
 
-#project-hero:hover .project-hero-title--initial{
+#project-hero:hover #project-hero-name {
   width: 100%;
   transition: 1s width ease-in-out;
 }
 
-.project-hero-title--initial{
+#project-hero-name {
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -20,26 +20,26 @@
   position: absolute;
   overflow: hidden;
   word-break: keep-all;
-  margin-top: 5em;
+  margin-top: 5.5em;
   width: 0;
   transition: 1s width ease-in-out;
   animation: bounce 1s ease-in-out forwards;
 }
 
-.project-hero-title--initial > * {
+#project-hero-name > * {
   margin: 0.2em;
   transition: 1s color ease-in-out;
   font-size: 10em;
   font-family: BoldMcFont;
-  font-weight: bold;
   color: #36454f;
 }
 
-.project-hero-title--initial:hover > * {
+#project-hero-name:hover > * {
   color: #a57c00;
 }
 
-.project-hero-title--hovered{
+#hovered-project-hero-name {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,19 +48,50 @@
   animation: fadein 1s;
 }
 
-.project-hero-title--hovered >* {
+#hovered-project-hero-name > * {
   margin: 0.2em;
   animation: bounce 1s ease-in-out forwards;
   font-size: 10em;
   font-family: BoldMcFont;
-  font-weight: bold;
 }
 
 @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #project-hero-name > * {
+    font-size: 6em;
+  }
+
+  
+  #hovered-project-hero-name > * {
+    font-size: 6em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #project-hero-name {
+    flex-direction: column;
+  }
+
+  #hovered-project-hero-name{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #project-hero-name > * {
+    font-size: 4.2em;
+  }
+
+  
+  #hovered-project-hero-name > * {
+    font-size: 4.2em;
+  }
+}
