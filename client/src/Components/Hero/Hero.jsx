@@ -1,7 +1,7 @@
 import "./Hero.css";
 import React from "react";
 
-const Hero = ({homeReference}) => {
+const Hero = ({ homeReference }) => {
   return (
     <div id="hero-container" ref={homeReference}>
       <div id="hero-wrapper">
