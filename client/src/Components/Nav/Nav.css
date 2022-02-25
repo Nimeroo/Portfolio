@@ -4,10 +4,8 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   height: 3em;
   background-color: #a57c00;
-  text-align: center;
 }
 
 #navbar > * {
@@ -17,7 +15,8 @@
 }
 
 #logo {
-  font-size: 1.3em;
+  width: 6em;
+  height: 3em;
   font-family: BoldMcFont;
   color: black;
 }
@@ -30,21 +29,27 @@
 }
 
 #nav-links-cont > a {
-    height: inherit;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+  height: inherit;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
-.nav-link{
-    height: 60%;
-    cursor: pointer;
-    font-size: 1em;
-    font-family: McFont;
-    color: black;
+.nav-link {
+  height: 60%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: McFont;
+  color: black;
 }
 
 .nav-link:hover {
-    transition: 0.1s;
-    border-bottom: solid #804a00;
-    color: #36454f;
+  transition: 0.1s;
+  border-bottom: solid #804a00;
+  color: #36454f;
+}
+
+@media only screen and (max-width: 600) {
+  #nav-links-cont {
+    flex-direction: column;
+  }
 }
