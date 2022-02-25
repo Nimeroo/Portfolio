@@ -19,10 +19,16 @@ const ProjectList = ({ projects }) => {
                 src={project.fields.Thumbnail[0].url}
               ></img>
               <h4 id="project-description">{project.fields.Notes}</h4>
-              <a id="project-link" href={project.fields.LiveDemo} target="_blank">
+              <a
+                id="project-link"
+                href={project.fields.LiveDemo}
+                target="_blank"
+              >
                 Live Demo
               </a>
-              <h5 id="project-technologies">{project.fields.ProgramsUsed.join(", ")}</h5>
+              <h5 id="project-technologies">
+                {project.fields.ProgramsUsed.join(", ")}
+              </h5>
             </Paper>
           );
         })}
