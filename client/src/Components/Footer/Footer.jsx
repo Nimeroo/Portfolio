@@ -1,12 +1,8 @@
 import React from "react";
-import "./Footer.css"
+import "./Footer.css";
 
 const Footer = () => {
-  return (
-    <div id="footer">
-      Built by Joel Giroux
-    </div>
-  );
+  return <div id="footer">Built by Joel Giroux</div>;
 };
 
 export default Footer;
