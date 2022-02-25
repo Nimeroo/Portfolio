@@ -7,7 +7,7 @@ const About = ({ aboutReference }) => {
     <Box id="about" ref={aboutReference}>
       <h1 id="about-title">About me</h1>
       <Paper elevation={10} id="about-cont">
-        <img id="round-img"></img>
+        <img id="profile-pic" alt="joel"></img>
         <div id="about-info">
           <h1 id="about-job-title">Software Developer</h1>
           <Typography component="h4" id="about-text">
@@ -21,6 +21,7 @@ const About = ({ aboutReference }) => {
             id="resume-link"
             href="https://docs.google.com/document/d/1jguaPrvfm5L7l-nkVlsO00poP8kNEvIt8bwBL2WrhXo/"
             target="_blank"
+            rel="noreferrer"
           >
             Click here for resume.
           </a>

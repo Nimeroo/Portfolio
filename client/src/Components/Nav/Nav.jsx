@@ -54,7 +54,7 @@ const Nav = ({
   return (
     <Toolbar sx={{ boxShadow: boxShadower }} variant="dense" id="navbar">
       <Link to="/">
-        <img id="logo" src={mainLogo}></img>
+        <img id="logo" src={mainLogo} alt="logo"></img>
       </Link>
       <div id="nav-links-cont">
         {window.screen.width <= 600 ? (

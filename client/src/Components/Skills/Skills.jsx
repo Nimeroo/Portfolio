@@ -50,10 +50,10 @@ const Skills = ({ skillsReference, scrollTo }) => {
               <h5 className="skill-name">Express</h5>
             </div>
             <div className="skill-item">
-              <h5 alt="Node.js" className="skill-name">
+              <img src={nodeLogo} alt="Node.js" className="skill-image"></img>
+              <h5 className="skill-name">
                 Node.js
               </h5>
-              <img src={nodeLogo} className="skill-image"></img>
             </div>
             <div className="skill-item">
               <img src={pythonLogo} alt="Python" className="skill-image"></img>
