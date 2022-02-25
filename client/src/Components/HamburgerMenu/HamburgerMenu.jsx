@@ -1,7 +1,6 @@
 import "./HamburgerMenu.css";
 import { MenuItem, MenuList, Paper } from "@mui/material";
 import { Link } from "react-router-dom";
-import react from "react";
 
 const HamburgerMenu = ({
   updateHamburger,
