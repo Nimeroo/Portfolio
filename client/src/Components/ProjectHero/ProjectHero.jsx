@@ -1,13 +1,13 @@
-import "./ProjectHero.css"
+import "./ProjectHero.css";
 import React from "react";
 
 export const ProjectHero = () => {
   return (
     <div id="project-hero">
-      <div class="project-hero-title project-hero-title--initial">
+      <div id="project-hero-name">
         <h1>Projects</h1>
       </div>
-      <div class="project-hero-title project-hero-title--hovered">
+      <div id="hovered-project-hero-name">
         <h1>Projects</h1>
       </div>
     </div>
