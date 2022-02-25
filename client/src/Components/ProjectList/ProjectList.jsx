@@ -11,18 +11,25 @@ const ProjectList = ({ projects }) => {
           return (
             <Paper elevation={10} id="project-cont">
               <h2 id="project-title">{project.fields.Title}</h2>
-              <a id="github-link" href={project.fields.Github} target="_blank">
-                <img src={githubLogo}></img>
+              <a
+                id="github-link"
+                href={project.fields.Github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={githubLogo} alt="github"></img>
               </a>
               <img
                 id="project-thumbnail"
                 src={project.fields.Thumbnail[0].url}
+                alt="demo thumbnail"
               ></img>
               <h4 id="project-description">{project.fields.Notes}</h4>
               <a
                 id="project-link"
                 href={project.fields.LiveDemo}
                 target="_blank"
+                rel="noreferrer"
               >
                 Live Demo
               </a>

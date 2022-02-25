@@ -42,15 +42,21 @@ const Skills = ({ skillsReference, scrollTo }) => {
           </h5>
           <div id="other-skills">
             <div className="skill-item">
-              <img src={expressLogo} className="skill-image"></img>
+              <img
+                alt="Express"
+                src={expressLogo}
+                className="skill-image"
+              ></img>
               <h5 className="skill-name">Express</h5>
             </div>
             <div className="skill-item">
+              <h5 alt="Node.js" className="skill-name">
+                Node.js
+              </h5>
               <img src={nodeLogo} className="skill-image"></img>
-              <h5 className="skill-name">Node.js</h5>
             </div>
             <div className="skill-item">
-              <img src={pythonLogo} className="skill-image"></img>
+              <img src={pythonLogo} alt="Python" className="skill-image"></img>
               <h5 className="skill-name">Python</h5>
             </div>
           </div>
@@ -76,19 +82,23 @@ const Skills = ({ skillsReference, scrollTo }) => {
         <h5 className="specific-skills-title">Recently used technologies</h5>
         <div id="recent-skills">
           <div className="skill-item">
-            <img src={reactLogo} className="skill-image"></img>
+            <img src={reactLogo} alt="React" className="skill-image"></img>
             <h5 className="skill-name">React</h5>
           </div>
           <div className="skill-item">
-            <img src={jsLogo} className="skill-image"></img>
+            <img src={jsLogo} alt="Javascript" className="skill-image"></img>
             <h5 className="skill-name">JavaScript (ES6+)</h5>
           </div>
           <div className="skill-item">
-            <img src={railsLogo} className="skill-image"></img>
+            <img
+              src={railsLogo}
+              alt="Ruby on Rails"
+              className="skill-image"
+            ></img>
             <h5 className="skill-name">Ruby on Rails</h5>
           </div>
           <div className="skill-item">
-            <img src={gitLogo} className="skill-image"></img>
+            <img src={gitLogo} alt="Git" className="skill-image"></img>
             <h5 className="skill-name">Git/Github</h5>
           </div>
         </div>

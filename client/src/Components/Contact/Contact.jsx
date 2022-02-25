@@ -25,10 +25,17 @@ const Contact = ({ contactReference }) => {
           <a
             className="social-link"
             href="https://www.linkedin.com/in/joelgiroux/"
+            target="_blank"
+            rel="noreferrer"
           >
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>
-          <a className="social-link" href="https://github.com/Nimeroo">
+          <a
+            className="social-link"
+            href="https://github.com/Nimeroo"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={githubLogo} alt="Github" />
           </a>
         </div>
