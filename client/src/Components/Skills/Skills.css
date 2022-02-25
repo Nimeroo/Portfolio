@@ -79,6 +79,9 @@
 }
 
 .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1em;
   margin-left: 5em;
   margin-right: 5em;
@@ -90,12 +93,16 @@
   height: 100%;
 }
 
+.skill-name {
+  font-family: McFont;
+}
+
 .expand-btn {
   position: absolute;
   bottom: 0;
   background: none;
   border: none;
-  font-family: MCFont;
+  font-family: McFont;
 }
 
 .expand-btn:hover {
@@ -151,5 +158,39 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #skills-title {
+    width: 30%;
+  }
+
+  .specific-skills-title {
+    width: 30%;
+  }
+
+  #recent-skills {
+    width: 90%;
+  }
+
+  #other-skills {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #recent-skills {
+    width: 100%;
+  }
+
+  #other-skills {
+    width: 100%;
+  }
+
+  .skill-item {
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
