@@ -34,15 +34,15 @@
   background-image: linear-gradient(to right, #804a00, #a57c00, #804a00);
 }
 
-#search-status {
-  font-family: MCFont;
+#contact-cont > * {
+  font-family: McFont;
 }
 
 #email {
   margin: 1em;
   text-decoration: #804a00 dotted underline;
   cursor: pointer;
-  font-family: MCFont;
+  font-family: McFont;
 }
 
 #email:hover {
@@ -77,6 +77,38 @@
 }
 
 .social-link > *:hover {
-    width: 105%;
-    height: 105%;
+  width: 105%;
+  height: 105%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #contact-title {
+    width: 20%;
+  }
+
+  #social-links-cont {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contact-title {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #social-links-cont {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #contact-title {
+    width: 45%;
+  }
+
+  #social-links-cont {
+    width: 100%;
+  }
 }
