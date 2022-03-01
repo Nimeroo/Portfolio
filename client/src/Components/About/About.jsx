@@ -1,5 +1,6 @@
 import "./About.css";
 import React from "react";
+import pfp from "../../Assets/pfp.jpg"
 import { Box, Paper, Typography } from "@mui/material";
 
 const About = ({ aboutReference }) => {
@@ -7,7 +8,7 @@ const About = ({ aboutReference }) => {
     <Box id="about" ref={aboutReference}>
       <h1 id="about-title">About me</h1>
       <Paper elevation={10} id="about-cont">
-        <img id="profile-pic" alt="joel"></img>
+        <img id="profile-pic" alt="joel" src={pfp}></img>
         <div id="about-info">
           <h1 id="about-job-title">Software Developer</h1>
           <Typography component="h4" id="about-text">
@@ -19,7 +20,7 @@ const About = ({ aboutReference }) => {
           </Typography>
           <a
             id="resume-link"
-            href="https://docs.google.com/document/d/1jguaPrvfm5L7l-nkVlsO00poP8kNEvIt8bwBL2WrhXo/"
+            href="https://docs.google.com/document/d/12JlR-qfUxxi4QuhbJMRenwtd4ORIPnBhlmaIwOtHRfQ/"
             target="_blank"
             rel="noreferrer"
           >
