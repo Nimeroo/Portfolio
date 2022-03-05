@@ -72,7 +72,8 @@
 #secondary-text > * {
   opacity: 0;
   margin: 0.5em;
-  font-family: MCFont;
+  font-family: McFont;
+  font-size: 62px;
   color: #a57c00;
   animation: fadein 1s forwards 1s;
 }
@@ -93,6 +94,12 @@
 
   #hovered-hero-name > * {
     font-size: 8em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #secondary-text > * {
+    font-size: 30px;
   }
 }
 
